@@ -1,0 +1,4 @@
+C:\Users\Linscott\documents\visual studio 2010\Projects\HISDB_MVVM_Interface\HSIDB_Model\bin\Release\HSIDB_Model.dll
+C:\Users\Linscott\documents\visual studio 2010\Projects\HISDB_MVVM_Interface\HSIDB_Model\bin\Release\HSIDB_Model.pdb
+C:\Users\Linscott\documents\visual studio 2010\Projects\HISDB_MVVM_Interface\HSIDB_Model\obj\Release\HSIDB_Model.dll
+C:\Users\Linscott\documents\visual studio 2010\Projects\HISDB_MVVM_Interface\HSIDB_Model\obj\Release\HSIDB_Model.pdb

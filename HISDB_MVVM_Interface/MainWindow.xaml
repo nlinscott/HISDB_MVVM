@@ -1,0 +1,42 @@
+﻿<Window x:Class="HISDB_MVVM_Interface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:HISDB_MVVM_Interface.Controls"
+        WindowStyle="SingleBorderWindow"
+        Title="HISDB" 
+        Background="{StaticResource WindowBackground}"
+        Height="450" Width="760"
+        MaxHeight="500"
+        MaxWidth="800"
+        MinHeight="450"
+        MinWidth="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox  Grid.Column="0" x:Name="nav" Margin="5" BorderThickness="2"
+                 ItemsSource="{Binding SideBar, Mode=OneWay}" ItemContainerStyle="{StaticResource RoundedItem}"
+                 SelectedIndex="0" >
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Style="{StaticResource ListItemTextStyle}" Text="{Binding Path=PageName}" FontSize="18"/>
+                        <TextBlock Style="{StaticResource ListItemTextStyle}" Text="Description..." FontSize="8"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            
+        </ListBox>
+
+        <Border Grid.Column="1" Margin="5" BorderThickness="2">
+            
+            <ContentControl Content="{Binding ElementName=nav, Path=SelectedItem}"/>
+            
+        </Border>
+       
+    </Grid>
+</Window>
